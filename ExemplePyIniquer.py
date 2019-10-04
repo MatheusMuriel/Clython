@@ -6,7 +6,20 @@ questions = [
         'type': 'input',
         'name': 'first_name',
         'message': 'Whats your first name',
-     }
+    },
+    {
+        'type': 'list',
+        'name': 'fruta',
+        'message': 'Escolha uma fruta',
+        'choices': [
+            'Banana',
+            'Maça',
+            'Abacaxi',
+            'Tomate?'
+        ]
+    }
 ]
 answers = prompt(questions)
 pprint(answers)
+
+print('Você escolheu', answers['fruta'])
